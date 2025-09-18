@@ -1,0 +1,10 @@
+div {
+    width:200px;
+    height:200px;
+    background-color:dodgerblue;
+    /*padding: 10%; 10% of set height and width. Padding does not respect max width and height.*/
+    max-width:200px;
+    max-height:200px;
+    padding:0px 10px 0px 10px;
+    margin:200px auto 200px auto;
+}
