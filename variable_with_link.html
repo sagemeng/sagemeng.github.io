@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cracker = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Crackers_with_herring_and_garlic_sauce.jpg/500px-Crackers_with_herring_and_garlic_sauce.jpg"
+        function show_cracker(){
+            document.getElementById('placeholder').innerHTML=`<img src="${cracker}">`
+        }
+        function hide_cracker(){
+            document.getElementById('placeholder').innerHTML=''
+        }
+        //Build toggle to check value
+        //Build variable to store state
+        //Build button
+            //Check state of var
+                // If False, print "Lights on
+            // Otherwise print "Lights off"
+        function check_value(){
+            let value = document.getElementById('placeholder_two').innerHTML
+            if(value=='Lights on'){
+                document.getElementById('placeholder_two').textContent='Lights off'
+            } else{
+                document.getElementById('placeholder_two').textContent='Lights on'
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="show_cracker()">Free Cracker</button>
+    <div id="placeholder"></div>
+    <button onclick="hide_cracker()">Eat Cracker</button>
+    <div id="placeholder_two">Lights off</div>
+    <button onclick="check_value()">Light</button>
+</body>
+</html>
